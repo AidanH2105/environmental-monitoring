@@ -24,6 +24,7 @@ analysis, and reporting are all separated into clear responsibilities.
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 from dataclasses import dataclass, field
@@ -936,25 +937,39 @@ class MonitorSystem:
 
 def main() -> None:
     """
-    Run the environmental monitoring analysis program using the default input
-    file names expected by the project.
-
-    The function prints a simple completion message so the user can see whether
-    the program finished successfully.
+    Run the environmental monitoring analysis program using command-line
+    arguments so different input files can be processed without editing
+    the source code.
     """
-    config_file = "environmental_sensor_config.json"
-    readings_file = "environmental_sensor_readings2.csv"
+    parser = argparse.ArgumentParser(
+        description="Environmental monitoring analysis program."
+    )
+
+    parser.add_argument(
+        "--config",
+        default="environmental_sensor_config.json",
+        help="Path to the sensor configuration JSON file."
+    )
+
+    parser.add_argument(
+        "--readings",
+        default="environmental_sensor_readings.csv",
+        help="Path to the sensor readings CSV file."
+    )
+
+    args = parser.parse_args()
 
     system = MonitorSystem()
-    system.run(config_file, readings_file)
+    system.run(args.config, args.readings)
 
     print("Environmental monitoring analysis completed successfully.")
+    print(f"Configuration file used: {args.config}")
+    print(f"Readings file used: {args.readings}")
     print("Generated files:")
     print(" - valid_readings.csv")
     print(" - invalid_readings.csv")
     print(" - alerts.csv")
     print(" - environmental_monitoring_report.txt")
-
 
 if __name__ == "__main__":
     main()
