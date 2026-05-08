@@ -1,0 +1,48 @@
+{
+  "sensors": [
+    {
+      "sensor_id": "temperature",
+      "name": "Temperature",
+      "unit": "C",
+      "min_valid": -20,
+      "max_valid": 60,
+      "warning_low": 5,
+      "warning_high": 30,
+      "critical_low": 0,
+      "critical_high": 35
+    },
+    {
+      "sensor_id": "humidity",
+      "name": "Humidity",
+      "unit": "%",
+      "min_valid": 0,
+      "max_valid": 100,
+      "warning_low": 30,
+      "warning_high": 70,
+      "critical_low": 20,
+      "critical_high": 85
+    },
+    {
+      "sensor_id": "pressure",
+      "name": "Pressure",
+      "unit": "hPa",
+      "min_valid": 850,
+      "max_valid": 1100,
+      "warning_low": 980,
+      "warning_high": 1035,
+      "critical_low": 950,
+      "critical_high": 1055
+    },
+    {
+      "sensor_id": "light",
+      "name": "Light Level",
+      "unit": "lux",
+      "min_valid": 0,
+      "max_valid": 20000,
+      "warning_low": 100,
+      "warning_high": 15000,
+      "critical_low": 20,
+      "critical_high": 18000
+    }
+  ]
+}
