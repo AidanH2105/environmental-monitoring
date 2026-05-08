@@ -1,0 +1,37 @@
+ENVIRONMENTAL MONITORING REPORT
+========================================
+
+Invalid readings: 3
+Alert counts by severity:
+  - critical: 3
+  - warning: 4
+
+Per-sensor statistics:
+
+temperature
+  Count : 7
+  Min   : 12.0
+  Max   : 34.5
+  Mean  : 23.228571428571428
+  Median: 22.2
+
+humidity
+  Count : 7
+  Min   : 23.5
+  Max   : 84.9
+  Mean  : 53.07142857142857
+  Median: 49.6
+
+pressure
+  Count : 7
+  Min   : 949.0
+  Max   : 1056.4
+  Mean  : 1010.6571428571428
+  Median: 1009.1
+
+light
+  Count : 7
+  Min   : 25.0
+  Max   : 18120.0
+  Mean  : 5055.0
+  Median: 700.0

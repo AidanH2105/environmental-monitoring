@@ -1,0 +1,8 @@
+timestamp,sensor_id,severity,message,reading_value
+2026-05-11T12:00:00,temperature,warning,Temperature reading has entered the warning range.,34.5
+2026-05-11T12:01:00,humidity,warning,Humidity reading has entered the warning range.,84.9
+2026-05-11T12:02:00,pressure,critical,Pressure reading has entered the critical range.,1056.4
+2026-05-11T12:03:00,light,critical,Light Level reading has entered the critical range.,18120.0
+2026-05-11T13:01:00,humidity,warning,Humidity reading has entered the warning range.,23.5
+2026-05-11T13:02:00,pressure,critical,Pressure reading has entered the critical range.,949.0
+2026-05-11T13:03:00,light,warning,Light Level reading has entered the warning range.,25.0

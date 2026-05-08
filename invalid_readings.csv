@@ -1,0 +1,4 @@
+timestamp,sensor_id,value,status,is_valid,error_message
+2026-05-11T15:00:00,temperature,,invalid,False,Reading value is blank
+2026-05-11T15:01:00,humidity,101.0,invalid,False,Reading outside valid sensor range
+2026-05-11T15:02:00,pressure,849.0,invalid,False,Reading outside valid sensor range
